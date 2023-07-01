@@ -1,0 +1,11 @@
+sequence diagram
+  participant browser
+  paarticipant server
+  participant user
+
+  user enters note in text box
+  user clicks submit button
+
+  browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+  server saves new note
+  server redirects to same page with new note added
